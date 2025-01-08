@@ -132,3 +132,24 @@ Online Communities: Kaggle, Reddit (r/MachineLearning), Stack Overflow.
 
 ![AI Engineer Roadmap - visual selection-11](https://github.com/user-attachments/assets/e9fbbb0d-6574-4fa1-9bad-ba500e325a7b)
 
+
+### VII. References:
+
+● Bezoui, M. (2023, 21 de agosto). How to Become an AI Engineer: A Comprehensive Roadmap. Medium. https://medium.com/@madani.bezoui/how-to-become-an-ai-engineer-a-comprehensive-roadmap-c2f905aacb
+
+● Bouchard, L.-F. (2024, 30 de mayo). AI Engineer’s Toolkit. “A must-read for all developers”. Towards AI
+
+● Ebrahimi, A. (2023, 9 de diciembre). Embarking on the Journey to Becoming an AI Engineer: A Realistic Roadmap. Medium. https://medium.com/@alireza.eb6/embarking-on-the-journey-to-becoming-an-ai-engineer-a-realistic-roadmap-f9ad3f0b80b6
+
+● FinanceAndCode. (2024, 22 de septiembre). AI Engineer Career Roadmap: A Comprehensive Guide. Medium. 
+
+● Meinardus, B. (2025, 3 de enero). How I’d learn ML in 2025 (if I could start over). Towards AI. https://archive.is/1XgPG
+
+● Ograbek, K. (2024, 3 de junio). If I started learning AI Engineering in 2024, here’s what I would do. The exact path I would choose. AI Advances. 
+
+● Ograbek, K. (2024, agosto). 6 Hard-learned Lessons from My First Project as a Freelance AI Engineer. AI Advances. 
+
+● Singh, T. (2024, 1 de noviembre). The 2025 AI Engineer Roadmap: Must-Have Skills, Tools, and Trends to Watch. Medium. 
+
+● Tyagi, H. (2024, 29 de abril). Roadmap to Become an AI Engineer. Skills, learning resources, and project ideas to become an AI Engineer in 2024. Medium. https://dswharshit.medium.com/roadmap-to-become-an-ai-engineer-roadmap-6d9558d970cf
+
