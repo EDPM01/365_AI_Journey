@@ -1,0 +1,12 @@
+# Pappers
+
+## Agents
+- Authors: Julia Wiesinger, Patrick Marlow and Vladimir Vuskovic
+- This combination of reasoning, logic, and access to external information that are all connected to a Generative AI model invokes the concept of an agent.
+- [Link](https://www.kaggle.com/whitepaper-agents)
+
+## Foundational Large Language Models & Text Generation
+- Authors: Mohammadamin Barektain, Anant Nawalgaria, Daniel J. Mankowitz, Majd Al Merey, Yaniv Leviathan, Massimo Mascaro, Matan Kalman, Elena Buchatskaya, Aliaksei Severyn, and Antonio Gulli
+- We believe that this new crop of technologies has the potential to assist, complement, empower, and inspire people at any time across almost any field.
+- [Link](https://www.kaggle.com/whitepaper-foundational-llm-and-text-generation)
+
