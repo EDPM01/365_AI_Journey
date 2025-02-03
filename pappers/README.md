@@ -13,6 +13,12 @@
 ## Attention Is All You Need
 - Authors: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
 - In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
-- [Link](https://www.kaggle.com/whitepaper-foundational-llm-and-text-generation](https://arxiv.org/abs/1706.03762)
+- [Link](https://arxiv.org/abs/1706.03762)
 
-  
+## Apple Intelligence Foundation Language Models
+- Authors: Apple
+- Introduced Foundation language models developed to power Apple Intelligence features. The foundation models are designed for Apple Intelligence, the personal intelligence system integrated into supported models of iPhone, iPad, and Mac.
+- [Link](https://arxiv.org/pdf/2407.21075)
+
+
+
