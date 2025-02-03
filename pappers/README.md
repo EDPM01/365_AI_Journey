@@ -10,3 +10,9 @@
 - We believe that this new crop of technologies has the potential to assist, complement, empower, and inspire people at any time across almost any field.
 - [Link](https://www.kaggle.com/whitepaper-foundational-llm-and-text-generation)
 
+## Attention Is All You Need
+- Authors: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
+- In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
+- [Link](https://www.kaggle.com/whitepaper-foundational-llm-and-text-generation](https://arxiv.org/abs/1706.03762)
+
+  
