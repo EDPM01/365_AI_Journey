@@ -10,8 +10,8 @@ Recomendation of courses & certifications
 ## Deep Learning
 
 - Introduction to Deep Learning
--- Cost: Free
--- Level: Basic
--- Type: Online
--- https://introtodeeplearning.com
+  - Cost: Free
+   Level: Basic
+   Type: Online
+   https://introtodeeplearning.com
 
