@@ -7,11 +7,22 @@ Recomendation of courses & certifications
 - Providers: IBM, Microsoft, Google, NVIDIA
 - Platforms: Google, Kaggle, Hugging Face
 
+## Machine Learning
+
+- Machine Learning Engineer
+  - Platform: Google
+  - Type: Certification
+  - Cost: Free / Pay for certification
+  - Level: Basic / Medium / Advanced 
+  - Mode: Online
+  - [URL](https://www.cloudskillsboost.google/paths/17)
+
 ## Deep Learning
 
 - Introduction to Deep Learning
+  - Platform: 
+  - Type: Course
   - Cost: Free
   - Level: Basic
-  -  Type: Online
-  -  https://introtodeeplearning.com
-
+  - Mode: Online
+  - [URL] (https://introtodeeplearning.com)
