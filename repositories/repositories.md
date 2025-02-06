@@ -45,4 +45,9 @@ VisionAgent is a library that helps you utilize agent frameworks to generate cod
 
 https://github.com/landing-ai/vision-agent?utm_campaign=VisionAgent&utm_medium=email&_hsenc=p2ANqtz--8LWWV6CDyXzWUCcTsYntCBJNC-ijHBbpK176hnT90dxW2y1BFIw9poXJ4J6cCGt-VdfcnS-L7c6sgtB2GbduyODVkIg&_hsmi=330706789&utm_content=330706789&utm_source=hs_automation
 
+# Agentic Systems
+
+Advanced + Agentic RAG Cookbooks👨🏻‍💻
+
+https://github.com/athina-ai/rag-cookbooks/tree/main/advanced_rag_techniques
 
