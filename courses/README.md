@@ -9,7 +9,7 @@ Recomendation of courses & certifications
 
 ## Machine Learning
 
-- Machine Learning Engineer
+### Machine Learning Engineer
   - Platform: Google
   - Type: Certification
   - Cost: Free / Pay for certification
@@ -19,10 +19,12 @@ Recomendation of courses & certifications
 
 ## Deep Learning
 
-- Introduction to Deep Learning
+### Introduction to Deep Learning
   - Platform: 
   - Type: Course
   - Cost: Free
   - Level: Basic
   - Mode: Online
-  - [URL] (https://introtodeeplearning.com)
+  - [URL](https://introtodeeplearning.com)
+ 
+  
