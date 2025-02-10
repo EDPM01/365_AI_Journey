@@ -37,3 +37,9 @@ https://huggingface.co/bigscience/bloom
 
 UAE - Falcon
 https://huggingface.co/Falconsai/nsfw_image_detection
+
+## Data Analysis
+
+Julius
+Analyze your data with computational AI
+https://julius.ai
