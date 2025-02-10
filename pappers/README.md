@@ -21,4 +21,8 @@
 - [Link](https://arxiv.org/pdf/2407.21075)
 
 
+## 𝗦𝗶𝗺𝘂𝗹𝘁𝗮𝗻𝗲𝗼𝘂𝘀 𝗦𝗽𝗲𝗲𝗰𝗵-𝘁𝗼-𝗦𝗽𝗲𝗲𝗰𝗵 𝗧𝗿𝗮𝗻𝘀𝗹𝗮𝘁𝗶𝗼𝗻 𝘄𝗶𝘁𝗵 𝗮 𝗠𝘂𝗹𝘁𝗶𝘀𝘁𝗿𝗲𝗮𝗺 𝗠𝗼𝗱𝗲𝗹
+- Authors: Tom Labiausse, Laurent Mazaré, Edouard Grave, Patrick Pérez, Alexandre Défossez, Neil Zeghidour
+- Introduced Read this papper about introduces Hibiki, a model for simultaneous speech-to-speech and speech-to-text translation. Hibiki employs a multi-stream language model to simultaneously process source and target speech.
+- [Link](https://arxiv.org/abs/2502.03382)
 
