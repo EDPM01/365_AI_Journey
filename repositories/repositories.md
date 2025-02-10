@@ -90,10 +90,10 @@ https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RA
     - https://github.com/josephmisiti/awesome-machine-learning
 
 - Awesome Production Machine Learning
-        - https://github.com/EthicalML/awesome-production-machine-learning
+    - https://github.com/EthicalML/awesome-production-machine-learning
  
 - Interactive Deep Learning Book with Multi-Framework Code, Math, and Discussions
-       - https://github.com/d2l-ai/d2l-en
+      - https://github.com/d2l-ai/d2l-en
 
 - 𝗕𝗲𝘀𝘁 𝗼𝗳 𝗠𝗟 𝗣𝘆𝘁𝗵𝗼𝗻
       - https://github.com/ml-tooling/best-of-ml-python
