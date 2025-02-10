@@ -7,6 +7,19 @@ Recomendation of courses & certifications
 - Providers: IBM, Microsoft, Google, NVIDIA
 - Platforms: Google, Kaggle, Hugging Face
 
+
+# Certifications
+
+## Deep Learning
+
+### Certificado profesional de DeepLearning.AI Data Engineering
+  - Platform: Coursera -> Andrew Ng & AWS
+  - Type: Certification
+  - Cost: Pay
+  - Level: Medium 
+  - Mode: Online
+  - [URL](https://www.coursera.org/professional-certificates/data-engineering?utm_campaign=coursera-campaign-social&utm_medium=institutions&utm_source=deeplearning-ai)
+
 ## Machine Learning
 
 ### Machine Learning Engineer
@@ -53,3 +66,22 @@ Recomendation of courses & certifications
         Geospatial Analysis
         Machine Learning Explainability
         Intro to Game AI and Reinforcement Learning
+    
+## Generative AI
+
+Programa especializado: Introduction to Generative AI Learning Path
+  - Platform: Coursera -> Google
+  - Type: Certification
+  - Cost: Pay
+  - Level: Medium 
+  - Mode: Online
+  - [URL](https://www.coursera.org/specializations/introduction-to-generative-ai)
+
+Programa especializado: IA para el bien
+  - Platform: Coursera -> Google
+  - Type: Certification
+  - Cost: Pay
+  - Level: Medium 
+  - Mode: Online
+  - [URL](https://www.coursera.org/specializations/ai-for-good?utm_campaign=coursera-campaign-social&utm_medium=institutions&utm_source=deeplearning-ai)
+
