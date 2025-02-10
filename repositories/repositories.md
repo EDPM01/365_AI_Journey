@@ -66,3 +66,16 @@ MultiModal RAG with DeepSeek-Janus-Pro
 https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RAG
 
 
+# Machine Learning
+
+Machine learning system design pattern
+
+https://github.com/mercari/ml-system-design-pattern
+
+
+Made-With-ML
+
+https://github.com/GokuMohandas/Made-With-ML
+
+
+
