@@ -72,24 +72,29 @@ https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RA
     - https://github.com/mercari/ml-system-design-pattern
 
 - Made-With-ML
-    https://github.com/GokuMohandas/Made-With-ML
-
-
+    - https://github.com/GokuMohandas/Made-With-ML
+      
 - Minimum Viable Study Plan for Machine Learning Interviews
-    https://github.com/khangich/machine-learning-interview
+   -  https://github.com/khangich/machine-learning-interview
 
 - The Algorithms - Python
-    https://github.com/TheAlgorithms/Python
+    - https://github.com/TheAlgorithms/Python
 
 - Awesome Data Science
-    https://github.com/academic/awesome-datascience
+   -  https://github.com/academic/awesome-datascience
 
 - Applied ML
-    https://github.com/eugeneyan/applied-ml
+    - https://github.com/eugeneyan/applied-ml
 
 - 𝗔𝘄𝗲𝘀𝗼𝗺𝗲 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴
-    https://github.com/josephmisiti/awesome-machine-learning
+    - https://github.com/josephmisiti/awesome-machine-learning
 
+- Awesome Production Machine Learning
+  - https://github.com/EthicalML/awesome-production-machine-learning
+ 
+- Interactive Deep Learning Book with Multi-Framework Code, Math, and Discussions
+      - https://github.com/d2l-ai/d2l-en
 
-
+- 𝗕𝗲𝘀𝘁 𝗼𝗳 𝗠𝗟 𝗣𝘆𝘁𝗵𝗼𝗻
+      - https://github.com/ml-tooling/best-of-ml-python
 
