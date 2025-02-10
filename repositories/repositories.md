@@ -59,3 +59,10 @@ Advanced + Agentic RAG Cookbooks👨🏻‍💻
 
 https://github.com/athina-ai/rag-cookbooks/tree/main/advanced_rag_techniques
 
+# RAG
+
+MultiModal RAG with DeepSeek-Janus-Pro
+
+https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RAG
+
+
