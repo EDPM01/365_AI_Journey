@@ -31,3 +31,7 @@
 - Introduce HUMANITY’S LAST EXAM (HLE), a multi-modal benchmark at the frontier of human knowledge, designed to be the final closed-ended academic benchmark of its kind with broad subject coverage
 - [Link](https://arxiv.org/abs/2501.14249)
 
+## The Impact of Generative AI on Critical Thinking
+- Authors: Microsoft
+- The rise of Generative AI (GenAI) in knowledge workflows raises questions about its impact on critical thinking skills and practices. We survey 319 knowledge workers to investigate 1) when and how they perceive the enaction of critical thinking when using GenAI, and 2) when and why GenAI affects their effort to do so.
+- [Link](https://www.microsoft.com/en-us/research/uploads/prod/2025/01/lee_2025_ai_critical_thinking_survey.pdf)
