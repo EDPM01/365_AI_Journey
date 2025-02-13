@@ -39,8 +39,7 @@ UAE - Falcon
 https://huggingface.co/Falconsai/nsfw_image_detection
 
 chatllm.abacus.ai
-
-url (https://chatllm.abacus.ai/SXzBdVmsCW?https://chatllm.abacus.ai/SXzBdVmsCW&gad_source=1&gbraid=0AAAAA-OhvsrSLBecevcmiSMuJNPFOmlGw&gclid=CjwKCAiAnKi8BhB0EiwA58DA4ZJTdDywd-CJ7iC_rQsap35U5XEqaXyB12C0Z55CMNDUokH-hz5vYxoCfdsQAvD_BwE)
+[link](https://chatllm.abacus.ai/SXzBdVmsCW?https://chatllm.abacus.ai/SXzBdVmsCW&gad_source=1&gbraid=0AAAAA-OhvsrSLBecevcmiSMuJNPFOmlGw&gclid=CjwKCAiAnKi8BhB0EiwA58DA4ZJTdDywd-CJ7iC_rQsap35U5XEqaXyB12C0Z55CMNDUokH-hz5vYxoCfdsQAvD_BwE)
 
 
 
