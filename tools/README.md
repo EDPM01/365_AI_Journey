@@ -43,3 +43,11 @@ https://huggingface.co/Falconsai/nsfw_image_detection
 Julius
 Analyze your data with computational AI
 https://julius.ai
+
+## Video
+
+Goku
+Flow Based Video Generative Foundation Models
+https://huggingface.co/papers/2502.04896
+
+
