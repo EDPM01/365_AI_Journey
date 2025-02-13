@@ -38,6 +38,12 @@ https://huggingface.co/bigscience/bloom
 UAE - Falcon
 https://huggingface.co/Falconsai/nsfw_image_detection
 
+chatllm.abacus.ai
+
+url (https://chatllm.abacus.ai/SXzBdVmsCW?https://chatllm.abacus.ai/SXzBdVmsCW&gad_source=1&gbraid=0AAAAA-OhvsrSLBecevcmiSMuJNPFOmlGw&gclid=CjwKCAiAnKi8BhB0EiwA58DA4ZJTdDywd-CJ7iC_rQsap35U5XEqaXyB12C0Z55CMNDUokH-hz5vYxoCfdsQAvD_BwE)
+
+
+
 ## Data Analysis
 
 Julius
@@ -49,5 +55,22 @@ https://julius.ai
 Goku
 Flow Based Video Generative Foundation Models
 https://huggingface.co/papers/2502.04896
+
+## Audio
+
+Hibiki
+High-Fidelity Simultaneous Speech-To-Speech Translation
+https://github.com/kyutai-labs/hibiki?tab=readme-ov-file
+
+https://huggingface.co/spaces/kyutai/hibiki-samples
+
+
+## Database
+Pgai 
+ Power your AI applications with PostgreSQL
+ Supercharge your PostgreSQL database with AI capabilities
+  https://github.com/timescale/pgai
+
+
 
 
