@@ -35,3 +35,10 @@
 - Authors: Microsoft
 - The rise of Generative AI (GenAI) in knowledge workflows raises questions about its impact on critical thinking skills and practices. We survey 319 knowledge workers to investigate 1) when and how they perceive the enaction of critical thinking when using GenAI, and 2) when and why GenAI affects their effort to do so.
 - [Link](https://www.microsoft.com/en-us/research/uploads/prod/2025/01/lee_2025_ai_critical_thinking_survey.pdf)
+
+## Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations
+- Authors: Anthropic
+- Despite widespread speculation about artificial intelligence’s impact on the future of work, we lack systematic empirical evidence about how these systems are actually being used for different tasks. Here, we present a novel framework for measuring AI usage patterns across the economy. 
+- [Link](https://www.anthropic.com/news/the-anthropic-economic-index)
+
+
