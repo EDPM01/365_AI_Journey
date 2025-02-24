@@ -48,11 +48,12 @@ https://github.com/landing-ai/vision-agent?utm_campaign=VisionAgent&utm_medium=e
 
 # Generative AI
 
-Whisper
+- Whisper
+    - https://github.com/openai/whisper
 
-https://github.com/openai/whisper
-
-
+- Generative AI for Beginners
+    - https://github.com/microsoft/generative-ai-for-beginners
+    
 # Agentic Systems
 
 Advanced + Agentic RAG Cookbooks👨🏻‍💻
@@ -65,6 +66,9 @@ MultiModal RAG with DeepSeek-Janus-Pro
 
 https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RAG
 
+# Deep Learning
+- Open Deep Research
+    - https://github.com/dzhng/deep-research
 
 # Machine Learning
 
