@@ -53,7 +53,11 @@ https://github.com/landing-ai/vision-agent?utm_campaign=VisionAgent&utm_medium=e
 
 - Generative AI for Beginners
     - https://github.com/microsoft/generative-ai-for-beginners
-    
+
+- Generative AI Teaching Kit Solutions Repository
+    - https://bitbucket.org/nvidia-dli/generative-ai-teaching-kit-solutions/src/main/
+
+
 # Agentic Systems
 
 Advanced + Agentic RAG Cookbooks👨🏻‍💻
