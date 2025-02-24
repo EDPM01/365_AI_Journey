@@ -98,3 +98,10 @@ https://github.com/patchy631/ai-engineering-hub/tree/main/deepseek-multimodal-RA
 - 𝗕𝗲𝘀𝘁 𝗼𝗳 𝗠𝗟 𝗣𝘆𝘁𝗵𝗼𝗻
   - https://github.com/ml-tooling/best-of-ml-python
 
+
+# Financial 
+
+- Python Training
+    - https://github.com/jpmorganchase/python-training
+
+
