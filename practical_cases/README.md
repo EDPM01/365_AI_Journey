@@ -1,4 +1,4 @@
-# Caso Práctico: optimizar sus inventarios y reducir costos operativos
+# Caso Práctico: Optimizar inventarios y reducir costos operativos
 
 ## Contexto:
 
