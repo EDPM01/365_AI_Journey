@@ -1,8 +1,11 @@
 # Análisis de estados financieros de una empresa que cotiza en BMV
 
 ---> Ir a la siguiente pçagina y bajar los estados financieros de Bimbo
+
 https://www.bmv.com.mx/es/empresas-listadas
+
 https://www.grupobimbo.com/es/inversionistas/reportes/reportes-bmv
+
 
 --> Ir a https://notebooklm.google.com
 
