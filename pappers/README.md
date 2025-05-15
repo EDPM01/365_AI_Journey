@@ -41,4 +41,7 @@
 - Despite widespread speculation about artificial intelligence’s impact on the future of work, we lack systematic empirical evidence about how these systems are actually being used for different tasks. Here, we present a novel framework for measuring AI usage patterns across the economy. 
 - [Link](https://www.anthropic.com/news/the-anthropic-economic-index)
 
-
+## AlphaEvolve: A coding agent for scientific and algorithmic discovery
+- Authors: Google
+- In this white paper, we present AlphaEvolve, an evolutionary coding agent that substantially enhances capabilities of state-of-the-art LLMs on highly challenging tasks such as tackling open scientific problems or optimizing critical pieces of computational infrastructure.
+- [Link]([https://www.microsoft.com/en-us/research/uploads/prod/2025/01/lee_2025_ai_critical_thinking_survey.pdf](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf))
