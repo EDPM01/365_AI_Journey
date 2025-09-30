@@ -155,6 +155,7 @@ const RecentActivity = ({ modelData, refreshKey }) => {
 
   useEffect(() => {
     setActivities(generateActivities());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refreshKey]);
 
   return (
