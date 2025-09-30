@@ -4,7 +4,13 @@ clientes.csv
 *.csv
 *.xlsx
 *.xls
-*.json
+# Solo ignorar JSONs de datos, no configuración
+/practical_cases/*/data/*.json
+/practical_cases/*/*/resultados*.json
+# Permitir archivos de configuración importantes
+!vercel.json
+!package.json
+!package-lock.json
 *.parquet
 *.pkl
 *.pickle
@@ -105,5 +111,3 @@ yarn-error.log*
 # Build del dashboard
 build/
 dist/
-
-#powershell -Command "cd 'C:\Users\emili\OneDrive\Desktop\Hola Mundo\365_AI_Journey\practical_cases\case01\dashboard'; npm start"
