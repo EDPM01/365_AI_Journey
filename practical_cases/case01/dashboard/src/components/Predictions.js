@@ -160,36 +160,97 @@ const Predictions = ({ modelData }) => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div style={{
+      minHeight: '100vh',
+      backgroundColor: '#f8fafc',
+      padding: '2rem 1rem'
+    }}>
+      <div style={{
+        maxWidth: '1400px',
+        margin: '0 auto',
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '2rem',
+        boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)'
+      }}>
       
-      {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          🔮 Predicciones en Tiempo Real
-        </h1>
-        <p className="text-gray-600">
-          Generar predicciones de demanda para productos específicos
-        </p>
-      </div>
+        {/* Header */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h1 style={{
+            fontSize: '2.5rem',
+            fontWeight: '800',
+            color: '#0f172a',
+            margin: '0 0 0.5rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem'
+          }}>
+            🔮 Predicciones en Tiempo Real
+          </h1>
+          <p style={{
+            fontSize: '1.125rem',
+            color: '#64748b',
+            margin: '0'
+          }}>
+            Generar predicciones de demanda inteligentes para productos específicos
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
+          gap: '2rem' 
+        }}>
         
         {/* Panel de configuración */}
-        <div className="lg:col-span-1">
-          <div className="card sticky top-4">
-            <div className="card-body">
+        <div style={{ gridColumn: 'span 1' }}>
+          <div style={{
+            backgroundColor: '#f8fafc',
+            borderRadius: '12px',
+            border: '1px solid #e2e8f0',
+            padding: '2rem',
+            position: 'sticky',
+            top: '1rem'
+          }}>
               
-              <h3 className="text-lg font-semibold mb-6">⚙️ Configuración de Predicción</h3>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              color: '#0f172a',
+              margin: '0 0 2rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              ⚙️ Configuración de Predicción
+            </h3>
               
               {/* Selector de categoría */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Categoría
+              <div style={{ marginBottom: '1.5rem' }}>
+                <label style={{
+                  display: 'block',
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  marginBottom: '0.5rem'
+                }}>
+                  📂 Categoría
                 </label>
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem 1rem',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '8px',
+                    fontSize: '0.875rem',
+                    backgroundColor: 'white',
+                    cursor: 'pointer',
+                    transition: 'border-color 0.2s ease'
+                  }}
+                  onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                  onBlur={(e) => e.target.style.borderColor = '#e2e8f0'}
                 >
                   {categories.map(cat => (
                     <option key={cat} value={cat}>
@@ -200,14 +261,31 @@ const Predictions = ({ modelData }) => {
               </div>
 
               {/* Selector de producto */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Producto
+              <div style={{ marginBottom: '1.5rem' }}>
+                <label style={{
+                  display: 'block',
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  marginBottom: '0.5rem'
+                }}>
+                  🛍️ Producto
                 </label>
                 <select
                   value={selectedProduct}
                   onChange={(e) => setSelectedProduct(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem 1rem',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '8px',
+                    fontSize: '0.875rem',
+                    backgroundColor: 'white',
+                    cursor: 'pointer',
+                    transition: 'border-color 0.2s ease'
+                  }}
+                  onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                  onBlur={(e) => e.target.style.borderColor = '#e2e8f0'}
                 >
                   <option value="">Seleccionar producto...</option>
                   {filteredProducts.map(product => (
@@ -219,11 +297,27 @@ const Predictions = ({ modelData }) => {
               </div>
 
               {/* Parámetros de predicción */}
-              <div className="space-y-4">
+              <div style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                gap: '1.5rem' 
+              }}>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Precio ($) {predictionInputs.precio}
+                  <label style={{
+                    display: 'block',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    marginBottom: '0.5rem'
+                  }}>
+                    💰 Precio ($) <span style={{ 
+                      color: '#3b82f6', 
+                      fontWeight: '700',
+                      backgroundColor: '#dbeafe',
+                      padding: '0.25rem 0.5rem',
+                      borderRadius: '4px'
+                    }}>{predictionInputs.precio}</span>
                   </label>
                   <input
                     type="range"
@@ -231,33 +325,74 @@ const Predictions = ({ modelData }) => {
                     max="1000"
                     value={predictionInputs.precio}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, precio: parseInt(e.target.value) }))}
-                    className="w-full"
+                    style={{
+                      width: '100%',
+                      height: '8px',
+                      borderRadius: '4px',
+                      background: 'linear-gradient(to right, #3b82f6 0%, #3b82f6 ' + ((predictionInputs.precio - 10) / 990 * 100) + '%, #e2e8f0 ' + ((predictionInputs.precio - 10) / 990 * 100) + '%, #e2e8f0 100%)',
+                      outline: 'none',
+                      cursor: 'pointer'
+                    }}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Temporada
+                  <label style={{
+                    display: 'block',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    marginBottom: '0.5rem'
+                  }}>
+                    🌤️ Temporada
                   </label>
                   <select
                     value={predictionInputs.temporada}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, temporada: e.target.value }))}
-                    className="w-full p-2 border border-gray-300 rounded-lg"
+                    style={{
+                      width: '100%',
+                      padding: '0.75rem 1rem',
+                      border: '2px solid #e2e8f0',
+                      borderRadius: '8px',
+                      fontSize: '0.875rem',
+                      backgroundColor: 'white',
+                      cursor: 'pointer',
+                      transition: 'border-color 0.2s ease'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                    onBlur={(e) => e.target.style.borderColor = '#e2e8f0'}
                   >
-                    <option value="baja">Baja</option>
-                    <option value="media">Media</option>
-                    <option value="alta">Alta</option>
+                    <option value="baja">🔵 Temporada Baja</option>
+                    <option value="media">🟡 Temporada Media</option>
+                    <option value="alta">🔴 Temporada Alta</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Día de la semana
+                  <label style={{
+                    display: 'block',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    marginBottom: '0.5rem'
+                  }}>
+                    📅 Día de la Semana
                   </label>
                   <select
                     value={predictionInputs.dia_semana}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, dia_semana: e.target.value }))}
-                    className="w-full p-2 border border-gray-300 rounded-lg"
+                    style={{
+                      width: '100%',
+                      padding: '0.75rem 1rem',
+                      border: '2px solid #e2e8f0',
+                      borderRadius: '8px',
+                      fontSize: '0.875rem',
+                      backgroundColor: 'white',
+                      cursor: 'pointer',
+                      transition: 'border-color 0.2s ease'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+                    onBlur={(e) => e.target.style.borderColor = '#e2e8f0'}
                   >
                     <option value="lunes">Lunes</option>
                     <option value="martes">Martes</option>
@@ -270,8 +405,20 @@ const Predictions = ({ modelData }) => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Inventario (unidades) {predictionInputs.inventario}
+                  <label style={{
+                    display: 'block',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    marginBottom: '0.5rem'
+                  }}>
+                    📦 Inventario (unidades) <span style={{ 
+                      color: '#10b981', 
+                      fontWeight: '700',
+                      backgroundColor: '#dcfce7',
+                      padding: '0.25rem 0.5rem',
+                      borderRadius: '4px'
+                    }}>{predictionInputs.inventario}</span>
                   </label>
                   <input
                     type="range"
@@ -279,13 +426,32 @@ const Predictions = ({ modelData }) => {
                     max="500"
                     value={predictionInputs.inventario}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, inventario: parseInt(e.target.value) }))}
-                    className="w-full"
+                    style={{
+                      width: '100%',
+                      height: '8px',
+                      borderRadius: '4px',
+                      background: 'linear-gradient(to right, #10b981 0%, #10b981 ' + (predictionInputs.inventario / 500 * 100) + '%, #e2e8f0 ' + (predictionInputs.inventario / 500 * 100) + '%, #e2e8f0 100%)',
+                      outline: 'none',
+                      cursor: 'pointer'
+                    }}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Precio Competencia ($) {predictionInputs.competencia_precio}
+                  <label style={{
+                    display: 'block',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    marginBottom: '0.5rem'
+                  }}>
+                    🏪 Precio Competencia ($) <span style={{ 
+                      color: '#f59e0b', 
+                      fontWeight: '700',
+                      backgroundColor: '#fef3c7',
+                      padding: '0.25rem 0.5rem',
+                      borderRadius: '4px'
+                    }}>{predictionInputs.competencia_precio}</span>
                   </label>
                   <input
                     type="range"
@@ -293,20 +459,44 @@ const Predictions = ({ modelData }) => {
                     max="1000"
                     value={predictionInputs.competencia_precio}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, competencia_precio: parseInt(e.target.value) }))}
-                    className="w-full"
+                    style={{
+                      width: '100%',
+                      height: '8px',
+                      borderRadius: '4px',
+                      background: 'linear-gradient(to right, #f59e0b 0%, #f59e0b ' + ((predictionInputs.competencia_precio - 10) / 990 * 100) + '%, #e2e8f0 ' + ((predictionInputs.competencia_precio - 10) / 990 * 100) + '%, #e2e8f0 100%)',
+                      outline: 'none',
+                      cursor: 'pointer'
+                    }}
                   />
                 </div>
 
-                <div className="flex items-center">
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '1rem',
+                  backgroundColor: '#f0fdf4',
+                  border: '2px solid #bbf7d0',
+                  borderRadius: '8px'
+                }}>
                   <input
                     type="checkbox"
                     id="promocion"
                     checked={predictionInputs.promocion}
                     onChange={(e) => setPredictionInputs(prev => ({ ...prev, promocion: e.target.checked }))}
-                    className="mr-2"
+                    style={{
+                      width: '1.25rem',
+                      height: '1.25rem',
+                      cursor: 'pointer'
+                    }}
                   />
-                  <label htmlFor="promocion" className="text-sm font-medium text-gray-700">
-                    Promoción activa
+                  <label htmlFor="promocion" style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#166534',
+                    cursor: 'pointer'
+                  }}>
+                    🎯 Promoción Activa
                   </label>
                 </div>
 
@@ -316,13 +506,33 @@ const Predictions = ({ modelData }) => {
               <button
                 onClick={handlePredict}
                 disabled={!selectedProduct || isLoading}
-                className={`
-                  w-full mt-6 py-3 px-4 rounded-lg font-medium transition-all duration-200
-                  ${!selectedProduct || isLoading
-                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                    : 'bg-blue-600 text-white hover:bg-blue-700 transform hover:scale-105'
+                style={{
+                  width: '100%',
+                  marginTop: '2rem',
+                  padding: '1rem 1.5rem',
+                  borderRadius: '12px',
+                  fontSize: '1rem',
+                  fontWeight: '700',
+                  border: 'none',
+                  cursor: !selectedProduct || isLoading ? 'not-allowed' : 'pointer',
+                  backgroundColor: !selectedProduct || isLoading ? '#d1d5db' : '#3b82f6',
+                  color: !selectedProduct || isLoading ? '#6b7280' : 'white',
+                  transition: 'all 0.2s ease',
+                  transform: !selectedProduct || isLoading ? 'none' : 'translateY(0)',
+                  boxShadow: !selectedProduct || isLoading ? 'none' : '0 4px 12px rgba(59, 130, 246, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  if (!(!selectedProduct || isLoading)) {
+                    e.target.style.transform = 'translateY(-2px)';
+                    e.target.style.backgroundColor = '#2563eb';
                   }
-                `}
+                }}
+                onMouseLeave={(e) => {
+                  if (!(!selectedProduct || isLoading)) {
+                    e.target.style.transform = 'translateY(0)';
+                    e.target.style.backgroundColor = '#3b82f6';
+                  }
+                }}
               >
                 {isLoading ? '🔄 Prediciendo...' : '🔮 Generar Predicción'}
               </button>
@@ -332,112 +542,332 @@ const Predictions = ({ modelData }) => {
         </div>
 
         {/* Panel principal */}
-        <div className="lg:col-span-2 space-y-8">
+        <div style={{ 
+          gridColumn: 'span 1',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '2rem'
+        }}>
           
           {/* Historial de predicciones */}
-          <div className="card">
-            <div className="card-body">
-              <h3 className="text-lg font-semibold mb-4">📈 Predicciones vs Realidad (Últimos 30 días)</h3>
-              
-              <div className="h-80">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={historicalData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="fecha" />
-                    <YAxis />
-                    <Tooltip />
-                    <Line 
-                      type="monotone" 
-                      dataKey="prediccion" 
-                      stroke="#3b82f6" 
-                      name="Predicción"
-                      strokeWidth={2}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="real" 
-                      stroke="#10b981" 
-                      name="Real"
-                      strokeWidth={2}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
+          <div style={{
+            backgroundColor: '#f8fafc',
+            borderRadius: '12px',
+            border: '1px solid #e2e8f0',
+            padding: '2rem'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              color: '#0f172a',
+              margin: '0 0 1.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              📈 Predicciones vs Realidad (Últimos 30 días)
+            </h3>
+            
+            <div style={{ 
+              height: '320px',
+              backgroundColor: 'white',
+              borderRadius: '8px',
+              padding: '1rem',
+              border: '1px solid #e2e8f0'
+            }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={historicalData} margin={{ top: 20, right: 30, bottom: 20, left: 20 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
+                  <XAxis 
+                    dataKey="fecha" 
+                    stroke="#64748b"
+                    fontSize="12"
+                  />
+                  <YAxis 
+                    stroke="#64748b"
+                    fontSize="12"
+                  />
+                  <Tooltip 
+                    contentStyle={{ 
+                      backgroundColor: 'white',
+                      border: '1px solid #e2e8f0',
+                      borderRadius: '8px',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+                    }}
+                  />
+                  <Line 
+                    type="monotone" 
+                    dataKey="prediccion" 
+                    stroke="#3b82f6" 
+                    name="Predicción"
+                    strokeWidth={3}
+                    dot={{ fill: '#3b82f6', strokeWidth: 2, r: 4 }}
+                    activeDot={{ r: 6, stroke: '#3b82f6', strokeWidth: 2, fill: 'white' }}
+                  />
+                  <Line 
+                    type="monotone" 
+                    dataKey="real" 
+                    stroke="#10b981" 
+                    name="Real"
+                    strokeWidth={3}
+                    dot={{ fill: '#10b981', strokeWidth: 2, r: 4 }}
+                    activeDot={{ r: 6, stroke: '#10b981', strokeWidth: 2, fill: 'white' }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
             </div>
           </div>
 
           {/* Resultados de predicciones recientes */}
-          <div className="card">
-            <div className="card-body">
-              <h3 className="text-lg font-semibold mb-4">🎯 Predicciones Recientes</h3>
-              
-              {predictions.length === 0 ? (
-                <div className="text-center py-8 text-gray-500">
-                  <p>No hay predicciones aún. ¡Genera tu primera predicción!</p>
-                </div>
-              ) : (
-                <div className="space-y-4">
+          <div style={{
+            backgroundColor: '#f8fafc',
+            borderRadius: '12px',
+            border: '1px solid #e2e8f0',
+            padding: '2rem'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              color: '#0f172a',
+              margin: '0 0 1.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              🎯 Predicciones Recientes
+            </h3>
+            
+            {predictions.length === 0 ? (
+              <div style={{
+                textAlign: 'center',
+                padding: '3rem 1rem',
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                border: '2px dashed #cbd5e1'
+              }}>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '1rem',
+                  margin: '0'
+                }}>
+                  💭 No hay predicciones aún. ¡Genera tu primera predicción!
+                </p>
+              </div>
+            ) : (
+                <div style={{ 
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.5rem'
+                }}>
                   {predictions.map(prediction => (
-                    <div key={prediction.id} className="border border-gray-200 rounded-lg p-4">
+                    <div key={prediction.id} style={{
+                      backgroundColor: 'white',
+                      border: '2px solid #e2e8f0',
+                      borderRadius: '12px',
+                      padding: '2rem',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                      e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+                      e.currentTarget.style.borderColor = '#3b82f6';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = 'none';
+                      e.currentTarget.style.borderColor = '#e2e8f0';
+                    }}>
                       
-                      <div className="flex items-start justify-between mb-3">
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'start',
+                        justifyContent: 'space-between',
+                        marginBottom: '1.5rem'
+                      }}>
                         <div>
-                          <h4 className="font-semibold text-gray-900">{prediction.producto}</h4>
-                          <p className="text-sm text-gray-500">{prediction.categoria} • {prediction.timestamp}</p>
+                          <h4 style={{
+                            fontSize: '1.125rem',
+                            fontWeight: '700',
+                            color: '#0f172a',
+                            margin: '0 0 0.5rem'
+                          }}>
+                            {prediction.producto}
+                          </h4>
+                          <p style={{
+                            fontSize: '0.875rem',
+                            color: '#64748b',
+                            margin: '0'
+                          }}>
+                            📦 {prediction.categoria} • 🕒 {prediction.timestamp}
+                          </p>
                         </div>
                         
-                        <div className="text-right">
-                          <div className="text-2xl font-bold text-blue-600">
+                        <div style={{ textAlign: 'right' }}>
+                          <div style={{
+                            fontSize: '2rem',
+                            fontWeight: '800',
+                            color: '#3b82f6',
+                            margin: '0'
+                          }}>
                             {prediction.resultado.demanda_predicha}
                           </div>
-                          <div className="text-xs text-gray-500">unidades/día</div>
+                          <div style={{
+                            fontSize: '0.75rem',
+                            color: '#64748b',
+                            marginTop: '0.25rem'
+                          }}>
+                            unidades/día
+                          </div>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-3">
+                      <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
+                        gap: '1rem',
+                        marginBottom: '1.5rem'
+                      }}>
                         
-                        <div className="text-center">
-                          <div className="text-lg font-semibold text-green-600">
+                        <div style={{
+                          textAlign: 'center',
+                          padding: '1rem',
+                          backgroundColor: '#dcfce7',
+                          borderRadius: '8px',
+                          border: '1px solid #bbf7d0'
+                        }}>
+                          <div style={{
+                            fontSize: '1.25rem',
+                            fontWeight: '700',
+                            color: '#15803d',
+                            margin: '0'
+                          }}>
                             {prediction.resultado.confianza}%
                           </div>
-                          <div className="text-xs text-gray-500">Confianza</div>
+                          <div style={{
+                            fontSize: '0.75rem',
+                            color: '#166534',
+                            marginTop: '0.25rem'
+                          }}>
+                            Confianza
+                          </div>
                         </div>
                         
-                        <div className="text-center">
-                          <div className="text-sm font-medium">
+                        <div style={{
+                          textAlign: 'center',
+                          padding: '1rem',
+                          backgroundColor: '#dbeafe',
+                          borderRadius: '8px',
+                          border: '1px solid #93c5fd'
+                        }}>
+                          <div style={{
+                            fontSize: '0.875rem',
+                            fontWeight: '600',
+                            color: '#1e40af',
+                            margin: '0'
+                          }}>
                             {prediction.resultado.intervalo_inferior} - {prediction.resultado.intervalo_superior}
                           </div>
-                          <div className="text-xs text-gray-500">Rango</div>
+                          <div style={{
+                            fontSize: '0.75rem',
+                            color: '#1e3a8a',
+                            marginTop: '0.25rem'
+                          }}>
+                            Rango
+                          </div>
                         </div>
                         
-                        <div className="text-center">
-                          <div className="text-sm font-medium">${prediction.inputs.precio}</div>
-                          <div className="text-xs text-gray-500">Precio</div>
+                        <div style={{
+                          textAlign: 'center',
+                          padding: '1rem',
+                          backgroundColor: '#fef3c7',
+                          borderRadius: '8px',
+                          border: '1px solid #fde68a'
+                        }}>
+                          <div style={{
+                            fontSize: '0.875rem',
+                            fontWeight: '600',
+                            color: '#d97706',
+                            margin: '0'
+                          }}>
+                            ${prediction.inputs.precio}
+                          </div>
+                          <div style={{
+                            fontSize: '0.75rem',
+                            color: '#92400e',
+                            marginTop: '0.25rem'
+                          }}>
+                            Precio
+                          </div>
                         </div>
                         
-                        <div className="text-center">
-                          <div className="text-sm font-medium capitalize">{prediction.inputs.temporada}</div>
-                          <div className="text-xs text-gray-500">Temporada</div>
+                        <div style={{
+                          textAlign: 'center',
+                          padding: '1rem',
+                          backgroundColor: '#f3e8ff',
+                          borderRadius: '8px',
+                          border: '1px solid #c4b5fd'
+                        }}>
+                          <div style={{
+                            fontSize: '0.875rem',
+                            fontWeight: '600',
+                            color: '#7c3aed',
+                            margin: '0',
+                            textTransform: 'capitalize'
+                          }}>
+                            {prediction.inputs.temporada}
+                          </div>
+                          <div style={{
+                            fontSize: '0.75rem',
+                            color: '#581c87',
+                            marginTop: '0.25rem'
+                          }}>
+                            Temporada
+                          </div>
                         </div>
                         
                       </div>
 
                       {prediction.resultado.factores_clave.length > 0 && (
-                        <div>
-                          <h5 className="text-sm font-medium text-gray-700 mb-2">Factores Clave:</h5>
-                          <div className="flex flex-wrap gap-2">
+                        <div style={{
+                          marginTop: '1rem',
+                          padding: '1.5rem',
+                          backgroundColor: '#f1f5f9',
+                          borderRadius: '8px',
+                          border: '1px solid #cbd5e1'
+                        }}>
+                          <h5 style={{
+                            fontSize: '0.875rem',
+                            fontWeight: '600',
+                            color: '#334155',
+                            margin: '0 0 1rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem'
+                          }}>
+                            🔍 Factores Clave:
+                          </h5>
+                          <div style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '0.75rem'
+                          }}>
                             {prediction.resultado.factores_clave.map((factor, index) => (
                               <span
                                 key={index}
-                                className={`
-                                  text-xs px-2 py-1 rounded-full
-                                  ${factor.impact === 'positive'
-                                    ? 'bg-green-100 text-green-800'
-                                    : 'bg-red-100 text-red-800'
-                                  }
-                                `}
+                                style={{
+                                  fontSize: '0.75rem',
+                                  padding: '0.5rem 1rem',
+                                  borderRadius: '20px',
+                                  fontWeight: '600',
+                                  backgroundColor: factor.impact === 'positive' ? '#dcfce7' : '#fef2f2',
+                                  color: factor.impact === 'positive' ? '#166534' : '#dc2626',
+                                  border: `2px solid ${factor.impact === 'positive' ? '#bbf7d0' : '#fecaca'}`,
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '0.25rem'
+                                }}
                               >
-                                {factor.factor}
+                                {factor.impact === 'positive' ? '✅' : '❌'} {factor.factor}
                               </span>
                             ))}
                           </div>
@@ -453,7 +883,6 @@ const Predictions = ({ modelData }) => {
 
         </div>
       </div>
-    </div>
   );
 };
 

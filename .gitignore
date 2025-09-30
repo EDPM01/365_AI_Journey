@@ -105,3 +105,5 @@ yarn-error.log*
 # Build del dashboard
 build/
 dist/
+
+#powershell -Command "cd 'C:\Users\emili\OneDrive\Desktop\Hola Mundo\365_AI_Journey\practical_cases\case01\dashboard'; npm start"

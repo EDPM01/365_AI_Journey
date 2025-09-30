@@ -24,9 +24,15 @@ const Home = () => {
     },
     {
       title: 'Exploración de Datos',
-      description: 'Análisis y visualización de datos',
-      href: '/data',
+      description: 'Análisis interactivo basado en el notebook EDA',
+      href: '/data-exploration',
       color: 'orange'
+    },
+    {
+      title: 'Vista de Datos',
+      description: 'Tabla detallada de datos del modelo',
+      href: '/data',
+      color: 'indigo'
     },
     {
       title: 'Configuración',
@@ -42,6 +48,7 @@ const Home = () => {
       purple: 'border-purple-200 hover:border-purple-300 hover:bg-purple-50',
       green: 'border-green-200 hover:border-green-300 hover:bg-green-50',
       orange: 'border-orange-200 hover:border-orange-300 hover:bg-orange-50',
+      indigo: 'border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50',
       gray: 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
     };
     return colors[color] || colors.gray;

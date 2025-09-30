@@ -2,7 +2,7 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
-const FeatureImportanceChart = ({ modelData, timeRange, refreshKey }) => {
+const FeatureImportanceChart = ({ modelData, timeRange = '7d', refreshKey = 1 }) => {
 
   // Generar datos de importancia de características
   const generateFeatureImportance = () => {
@@ -32,19 +32,23 @@ const FeatureImportanceChart = ({ modelData, timeRange, refreshKey }) => {
 
     return features.map(feature => {
       // Agregar algo de variación basada en refreshKey y timeRange
-      const variation = (Math.sin(refreshKey + feature.baseImportance * 10) * 0.1 + 1);
+      const safeRefreshKey = isNaN(refreshKey) ? 1 : refreshKey;
+      const variation = (Math.sin(safeRefreshKey + feature.baseImportance * 10) * 0.1 + 1);
       const timeMultiplier = timeRange === '1d' ? 1 : 
                            timeRange === '7d' ? 1.05 :
                            timeRange === '30d' ? 1.1 : 1.15;
       
       let importance = feature.baseImportance * variation * timeMultiplier;
       
-      // Normalizar para que sume aproximadamente 1
+      // Normalizar para que sume aproximadamente 1 y evitar NaN
       importance = Math.max(0.01, Math.min(0.5, importance));
+      if (isNaN(importance)) {
+        importance = feature.baseImportance;
+      }
       
       return {
         name: feature.name,
-        importance: parseFloat((importance * 100).toFixed(2)),
+        importance: parseFloat((importance * 100).toFixed(2)) || 0,
         category: feature.category,
         color: categoryColors[feature.category] || '#6b7280',
         description: getFeatureDescription(feature.name)
@@ -102,7 +106,9 @@ const FeatureImportanceChart = ({ modelData, timeRange, refreshKey }) => {
         color: feature.color
       };
     }
-    acc[feature.category].totalImportance += feature.importance;
+    // Asegurarse de que importance sea un número válido
+    const importance = isNaN(feature.importance) ? 0 : feature.importance;
+    acc[feature.category].totalImportance += importance;
     acc[feature.category].count += 1;
     return acc;
   }, {});
@@ -195,7 +201,7 @@ const FeatureImportanceChart = ({ modelData, timeRange, refreshKey }) => {
                   
                   <div className="text-right">
                     <div className="text-sm font-semibold text-gray-900">
-                      {data.totalImportance.toFixed(1)}%
+                      {(data.totalImportance || 0).toFixed(1)}%
                     </div>
                     <div className="text-xs text-gray-500">
                       {data.count} {data.count === 1 ? 'característica' : 'características'}

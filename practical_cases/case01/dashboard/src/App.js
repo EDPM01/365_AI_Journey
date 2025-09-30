@@ -6,6 +6,7 @@ import Dashboard from './components/Dashboard';
 import ModelAnalysis from './components/ModelAnalysis';
 import Predictions from './components/Predictions';
 import DataView from './components/DataView';
+import DataExploration from './components/DataExploration';
 import Settings from './components/Settings';
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
           <Route path="/model-analysis" element={<ModelAnalysis modelData={modelData} />} />
           <Route path="/predictions" element={<Predictions modelData={modelData} />} />
           <Route path="/data" element={<DataView />} />
+          <Route path="/data-exploration" element={<DataExploration />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
