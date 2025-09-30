@@ -4,13 +4,7 @@ clientes.csv
 *.csv
 *.xlsx
 *.xls
-# Solo ignorar JSONs de datos, no configuración
-/practical_cases/*/data/*.json
-/practical_cases/*/*/resultados*.json
-# Permitir archivos de configuración importantes
-!vercel.json
-!package.json
-!package-lock.json
+*.json
 *.parquet
 *.pkl
 *.pickle

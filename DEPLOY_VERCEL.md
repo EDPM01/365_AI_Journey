@@ -14,12 +14,10 @@
 1. Ve a [vercel.com](https://vercel.com) y haz login
 2. Click "New Project"
 3. Importa tu repositorio: `EDPM01/365_AI_Journey`
-4. Configura los settings:
-   - **Framework Preset:** Other
-   - **Root Directory:** `.` (raíz del repositorio)
-   - **Build Command:** `cd practical_cases/case01/dashboard && npm run build`
-   - **Output Directory:** `practical_cases/case01/dashboard/build`
-   - **Install Command:** `cd practical_cases/case01/dashboard && npm install`
+4. **IMPORTANTE:** Usa la configuración automática del `vercel.json`
+   - Vercel detectará automáticamente la configuración
+   - **No cambies** Root Directory (usa el root del repo)
+   - El archivo `vercel.json` maneja toda la configuración
 
 #### Opción B: **Deploy con Vercel CLI**
 ```bash
@@ -88,11 +86,10 @@ Una vez desplegado, tendrás:
 ## 🔍 **Troubleshooting**
 
 ### ❌ **Errores Comunes:**
-1. **Build Failure:** Verificar que `npm run build` funciona localmente
-2. **404 en rutas:** Asegurarse que React Router está configurado
-3. **Assets no cargan:** Revisar rutas relativas en `public/`
-4. **Package.json not found:** Verificar que `vercel.json` tiene las rutas correctas
-5. **Estructura de carpetas:** El proyecto debe estar en la estructura correcta
+1. **"No such file or directory":** Usar Root Directory = `/` (root del repo)
+2. **Build Failure:** Verificar que `npm run build` funciona localmente
+3. **404 en rutas:** Asegurarse que React Router está configurado
+4. **Assets no cargan:** Revisar rutas relativas en `public/`
 
 ### ✅ **Soluciones:**
 ```bash
@@ -104,6 +101,12 @@ npx serve -s build  # Test del build en local
 # Verificar compilación
 npm start  # Debe funcionar sin errores
 ```
+
+### 🔧 **Configuración Correcta en Vercel:**
+- **Root Directory:** `/` (NO cambiar)
+- **Framework:** Detectado automáticamente por vercel.json
+- **Build Command:** Definido en vercel.json
+- **Output Directory:** Definido en vercel.json
 
 ---
 

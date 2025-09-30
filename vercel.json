@@ -4,10 +4,11 @@
   "buildCommand": "cd practical_cases/case01/dashboard && npm run build",
   "outputDirectory": "practical_cases/case01/dashboard/build",
   "installCommand": "cd practical_cases/case01/dashboard && npm install",
-  "routes": [
+  "framework": null,
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
